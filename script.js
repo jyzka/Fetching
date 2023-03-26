@@ -43,9 +43,18 @@ async function fetchCategory() {
             btn.innerText = el;
             btn.className = 'createdButtons';
 
-            function createdBtnsClick() {
+           async function createdBtnsClick() {
                 console.log('hooray it works!!!')
                 joke.innerHTML = 'Button works, but URL doesn\'t !!!! ';
+                // try{
+                //     const catJokesRespons = await fetch (jokesByCategories);
+                //     const catJokesData = await catJokesRespons.json();
+                //     console.log( catJokesData)
+
+                // } catch (err){
+                //     console.log(err)
+                // }
+
             }
 
         })
